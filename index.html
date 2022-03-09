@@ -6,30 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- link main.css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Portfolio</title>
 </head>
 <body>
-   <nav class="navbar">
+    <header>
+   <nav class="navbar container">
        <a href="./index.html">
+        
            <h2 class="logo">Samrat</h2>
        </a>
        <div class="menu">
            <ul class="menu-items" id="menu-items">
-               <li class="items middle"><a href="#">Home</a></li>
+               <li class="items middle current"><a href="#">Home</a></li>
                <li class="items middle"><a href="#">Porfolio</a></li>
                <li class="items midde"><a href="#">Contact</a></li>               
            </ul>
        </div>
        <div class="righticons">
-        <button class="btn place-items-center" id="theme-toggle-btn">
+        <button class="btn light-dark center-item" id="theme-toggle-btn">
             <i class="ri-sun-line sun-icon"></i>
             <i class="ri-moon-line moon-icon"></i>
         </button>
        </div>
+       <button class="btn menu-list screen-lg-hidden center-item" id="menu-toggle-btn">
+        <i class="ri-menu-3-line open-menu-icon"></i>
+        <i class="ri-close-line close-menu-icon"></i>
+       </button>
    </nav>
-
+    </header>
     <div class="descrition">
         I am samrat thapa I am interested in cybersecurity and devops
     </div>
+
+    <!-- Custom script -->
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
