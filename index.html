@@ -1,46 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <!-- link main.css -->
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="icon" href="./assets/images/favicon.png">
     <title>Portfolio</title>
 </head>
+
 <body>
     <header>
-   <nav class="navbar container">
-       <a href="./index.html">
-           <h2 class="logo">Samrat</h2>
-       </a>
-       <div class="menu">
-           <ul class="menu-items" id="menu-items">
-               <li class="items middle current"><a href="#">Home</a></li>
-               <li class="items middle"><a href="#">Porfolio</a></li>
-               <li class="items midde"><a href="#">Contact</a></li>               
-           </ul>
-       </div>
-       <div class="righticons">
-        <button class="btn light-dark center-item" id="theme-toggle-btn">
-            <i class="ri-sun-line sun-icon"></i>
-            <i class="ri-moon-line moon-icon"></i>
-        </button>
-       </div>
-       <button class="btn menu-list screen-lg-hidden center-item" id="menu-toggle-btn">
-        <i class="ri-menu-3-line open-menu-icon"></i>
-        <i class="ri-close-line close-menu-icon"></i>
-       </button>
-   </nav>
+        <nav class="navbar container">
+            <a href="./index.html">
+                <h2 class="logo">Samrat</h2>
+            </a>
+            <div class="menu">
+                <ul class="menu-items" id="menu-items">
+                    <li class="items middle current"><a href="https://hu8wolf.github.io/">Home</a></li>
+                    <li class="items middle"><a href="https://hu8wolf.github.io/aboutme/">Porfolio</a></li>
+                    <li class="items midde"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="righticons">
+                <button class="btn light-dark center-item" id="theme-toggle-btn">
+                        <img src="./assets/images/sun-line.png" alt="sun.jpg" class="ri-sun-line sun-icon">
+                        <i class="ri-moon-line moon-icon"></i>
+                    </button>
+            </div>
+            <button class="btn menu-list screen-lg-hidden center-item" id="menu-toggle-btn">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+        </nav>
     </header>
-    <div class="descrition">
-        I am samrat thapa I am interested in cybersecurity and devops.
-    </div>
+    <section class="body-element">
+        <div class="center">
+            <div class="description">
+                <h1>Hello, I'm samrat Thapa<br>I'm devops and cybersecurity enthusiast </h1>
+
+            </div>
+            <div class="skills-coding">
+                <h4 class="title" id="skill-header">Coding Skills</h4>
+                <div class="container-grid">
+                    <div class="progress-bar">
+                        <span class="skill">Python</span>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-main">
+                                <div class="progress-bar-body" style="width: 60%;"></div>
+                            </div>
+                            <span class="percentage">60%</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="progress-bar">
+                        <span class="skill">Javascript</span>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-main">
+                                <div class="progress-bar-body" style="width: 30%;"></div>
+                            </div>
+                            <span class="percentage">30%</span>
+
+                        </div>
+
+                    </div>
+                    <div class="progress-bar">
+                        <span class="skill">C</span>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-main">
+                                <div class="progress-bar-body" style="width: 50%;"></div>
+                            </div>
+                            <span class="percentage">50%</span>
+
+                        </div>
+
+                    </div>
+                    <div class="progress-bar">
+                        <span class="skill">C++</span>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-main">
+                                <div class="progress-bar-body" style="width: 50%;"></div>
+                            </div>
+                            <span class="percentage">50%</span>
+
+                        </div>
+
+                    </div>
+                    <div class="progress-bar">
+                        <span class="skill">SQL</span>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-main">
+                                <div class="progress-bar-body" style="width: 30%;"></div>
+                            </div>
+                            <span class="percentage">30%</span>
+
+                        </div>
+
+                    </div>
+                    <div class="progress-bar">
+                        <span class="skill">Android/JAVA</span>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-main">
+                                <div class="progress-bar-body" style="width: 45%;"></div>
+                            </div>
+                            <span class="percentage">45%</span>
+
+                        </div>
+
+                    </div>
+                    <div class="progress-bar">
+                        <span class="skill">Linux</span>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-main">
+                                <div class="progress-bar-body" style="width: 50%;"></div>
+                            </div>
+                            <span class="percentage">50%</span>
+
+                        </div>
+
+                    </div>
+                    <div class="progress-bar">
+                        <span class="skill">Dokcer</span>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-main">
+                                <div class="progress-bar-body" style="width: 30%;"></div>
+                            </div>
+                            <span class="percentage">30%</span>
+
+                        </div>
+
+                    </div>
+                    <div class="progress-bar">
+                        <span class="skill">HTML/CSSe</span>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-main">
+                                <div class="progress-bar-body" style="width: 55%;"></div>
+                            </div>
+                            <span class="percentage">55%</span>
+
+                        </div>
+
+                    </div>
+                    <div class="progress-bar">
+                        <span class="skill">Ansbile</span>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar-main">
+                                <div class="progress-bar-body" style="width: 10%;"></div>
+                            </div>
+                            <span class="percentage">10%</span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="certificates">
+                <h4 class="title" id="certificate-header">certificates</h4>
+                <div class="certificates-container">
+                    <img src="./assets/images/certificates/image_1" alt="" style="width: 100%;height: 100%;">
+                    </a>
+
+                </div>
+            </div>
+            <div class="Projects">
+                <h4 id="Projects-header" class="title">projects</h4>
+                <div class="swiper">
+
+                    <div class="swiper-wrapper">
+                        <!-- slides -->
+                        <a href="#" class="project swiper-slide">
+                            <img src="./assets/images/projects/image1" alt="" class="project-image">
+                            <div class="project-data-container">
+                                <div class="project-data">
+                                    <span>Academic Project</span>
+                                </div>
+                                <h3 class="title project-title">Sahara</h3>
+                            </div>
+                        </a>
+                        <!-- slides -->
+                        <a href="#" class="project swiper-slide">
+                            <img src="./assets/images/projects/image2" alt="" class="project-image">
+                            <div class="project-data-container">
+                                <div class="project-data">
+                                    <span>Academic Project</span>
+                                </div>
+                                <h3 class="title project-title">Akshayar</h3>
+                            </div>
+                        </a>
+                        <!-- slides -->
+                        <a href="#" class="project swiper-slide">
+                            <img src="./assets/images/projects/image3" alt="" class="project-image">
+                            <div class="project-data-container">
+                                <div class="project-data">
+                                    <span>Academic Project</span>
+                                </div>
+                                <h3 class="title project-title">Game rate</h3>
+                            </div>
+                        </a>
+                        <!-- slides -->
+                        <a href="#" class="project swiper-slide">
+                            <img src="" alt="" class="project-image">
+                            <div class="project-data-container">
+                                <div class="project-data">
+                                    <span>Personal Project</span>
+                                </div>
+                                <h3 class="title project-title">Check IPO </h3>
+                            </div>
+                        </a>
+                        <!-- slides -->
+                        <a href="#" class="project swiper-slide">
+                            <img src="" alt="" class="project-image">
+                            <div class="project-data-container">
+                                <div class="project-data">
+                                    <span>Personal Project</span>
+                                </div>
+                                <h3 class="title project-title">Web scrape</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-prev swiper-controls"></div>
+                    <div class="swiper-button-next swiper-controls"></div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <ul class="list social-media">
+                <li class="list-item">
+                    <a href="https://github.com/hu8wolf" class="list-link"><i class="ri-github-line"></i></a>
+                </li>
+                <li class="list-item">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=samratthapa0606@gmail.com&su=SUBJECT&body=BODY" class="list-link"><i class="ri-mail-line"></i></a>
+                </li>
+
+            </ul>
+
+        </div>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
     <!-- Custom script -->
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
